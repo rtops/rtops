@@ -1,12 +1,26 @@
-- 👋 Hi, I’m @rtops
-- 👀 I’m interested in malware
-- 🌱 I’m currently learning malware
-- 💞️ I’m looking to collaborate on malware
-- 📫 How to reach me o.0
-- 😄 Pronouns: rtops
-- ⚡ Fun fact: just a tech
+# rtops
+
+Hi, I'm @rtops - a tech enthusiast exploring various aspects of technology.
+
+## Projects
+
+### Object Detector - Android AI App
+
+An Android application for Google Pixel 8a featuring real-time AI-powered object detection and pattern recognition.
+
+**Features:**
+- Real-time object detection using Google ML Kit
+- CameraX integration for smooth camera access
+- Pattern recognition and object counting
+- Live statistics and visual feedback
+- Material Design UI
+
+**Tech Stack:** Kotlin, CameraX, ML Kit, Material Components
+
+For detailed information, build instructions, and usage guide, see [README_APP.md](README_APP.md)
+
+---
 
 <!---
-rtops/rtops is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
+rtops/rtops is a special repository because its `README.md` (this file) appears on your GitHub profile.
 --->

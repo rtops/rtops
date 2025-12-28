@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Object Detector</string>
+    <string name="camera_permission_required">Kameraåtkomst krävs för objektigenkänning</string>
+    <string name="clear_stats">Rensa Statistik</string>
+    <string name="detected_objects">Detekterade Objekt</string>
+    <string name="object_count">Antal: %d</string>
+    <string name="confidence">Konfidens: %.0f%%</string>
+</resources>
