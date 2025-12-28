@@ -1,0 +1,76 @@
+================================================================================
+  ANDROID OBJECT DETECTOR - SNABBSTART FÖR WINDOWS
+================================================================================
+
+AUTOMATISK INSTALLATION (REKOMMENDERAT)
+----------------------------------------
+
+Du har två automatiska scripts tillgängliga:
+
+ALTERNATIV 1: Batch-script (Enklast)
+────────────────────────────────────
+1. Öppna File Explorer i Windows
+2. Navigera till: \\wsl.localhost\Ubuntu\home\user\rtops
+   (eller: \\wsl$\Ubuntu\home\user\rtops)
+3. Dubbelklicka på: SETUP_WINDOWS.bat
+4. Följ instruktionerna på skärmen
+
+ALTERNATIV 2: PowerShell-script (Mer avancerat)
+──────────────────────────────────────────────
+1. Högerklicka på Start-menyn → Windows PowerShell (Admin)
+2. Kör detta kommando:
+
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force; \\wsl.localhost\Ubuntu\home\user\rtops\SETUP_WINDOWS.ps1
+
+3. Följ instruktionerna på skärmen
+
+
+MANUELL INSTALLATION (om scripts inte fungerar)
+------------------------------------------------
+
+1. Öppna File Explorer
+2. Gå till: \\wsl.localhost\Ubuntu\home\user\rtops
+3. Kopiera hela rtops-mappen
+4. Klistra in i: C:\AndroidProjects\
+5. Öppna Android Studio
+6. File → Open → C:\AndroidProjects\rtops
+7. Trust Project
+8. Vänta på Gradle sync
+9. Build → Build Bundle(s) / APK(s) → Build APK(s)
+
+
+EFTER BYGGE
+-----------
+
+APK-filen finns här:
+C:\AndroidProjects\rtops\app\build\outputs\apk\debug\app-debug.apk
+
+Kopiera den till din Google Pixel 8a och installera!
+
+
+FELSÖKNING
+----------
+
+Q: "\\wsl.localhost\Ubuntu" fungerar inte
+A: Försök: \\wsl$\Ubuntu eller \\wsl$\Ubuntu-24.04
+
+Q: Kan inte hitta projektet från Windows
+A: Kör 'wsl --list' i PowerShell för att se ditt exakta WSL-namn
+
+Q: Gradle sync misslyckas
+A: File → Invalidate Caches / Restart i Android Studio
+
+Q: SDK saknas
+A: Tools → SDK Manager → Installera Android SDK Platform 34
+
+
+SUPPORT
+-------
+
+Se detaljerad dokumentation i:
+- README_APP.md (Fullständig app-guide)
+- WINDOWS_BUILD.md (Windows-specifika instruktioner)
+- BUILD_FROM_WSL.md (WSL build-guide)
+
+
+================================================================================
