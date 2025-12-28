@@ -1,0 +1,77 @@
+================================================================================
+                    KÖR DETTA FRÅN WINDOWS - SUPER ENKELT!
+================================================================================
+
+ALTERNATIV 1: PowerShell (REKOMMENDERAT - GÖR ALLT AUTOMATISKT)
+================================================================
+
+1. Högerklicka på Start-menyn
+2. Välj "Windows PowerShell (Admin)" eller "Terminal (Admin)"
+3. Kopiera och klistra in detta kommando:
+
+   cd "\\wsl.localhost\Ubuntu\home\user\rtops"; .\RUN_ME.ps1
+
+4. Tryck Enter
+5. Följ instruktionerna på skärmen
+6. KLART! Android Studio öppnas automatiskt
+
+Scriptet gör ALLT automatiskt:
+✓ Konfigurerar WSL
+✓ Kopierar projektet till Windows
+✓ Startar Android Studio
+✓ Visar hur du bygger APK:n
+
+
+ALTERNATIV 2: Batch-fil (OM POWERSHELL INTE FUNGERAR)
+======================================================
+
+1. Öppna File Explorer
+2. Skriv i adressfältet: \\wsl.localhost\Ubuntu\home\user\rtops
+3. Dubbelklicka på: AUTO_BUILD.bat
+4. Följ instruktionerna
+
+
+OM INGET FUNGERAR: MANUELLT (TAR 2 MINUTER)
+============================================
+
+1. Öppna File Explorer
+2. Gå till: \\wsl.localhost\Ubuntu\home\user\rtops
+3. Kopiera hela rtops-mappen
+4. Klistra in i: C:\AndroidProjects\
+5. Öppna Android Studio
+6. File → Open → C:\AndroidProjects\rtops
+7. Trust Project
+8. Build → Build APK(s)
+
+
+EFTER BYGGE
+===========
+
+APK:n finns här:
+C:\AndroidProjects\rtops\app\build\outputs\apk\debug\app-debug.apk
+
+Kopiera till din Google Pixel 8a och installera!
+
+
+FELSÖKNING
+==========
+
+"\\wsl.localhost\Ubuntu" fungerar inte?
+→ Försök: \\wsl$\Ubuntu eller \\wsl$\Ubuntu-24.04
+
+PowerShell kräver admin?
+→ Använd AUTO_BUILD.bat istället (behöver inte admin)
+
+Android Studio hittas inte?
+→ Öppna det manuellt och välj C:\AndroidProjects\rtops
+
+
+================================================================================
+                         SUPPORT OCH DOKUMENTATION
+================================================================================
+
+Fullständig guide: README_APP.md
+Windows-instruktioner: WINDOWS_BUILD.md
+WSL-instruktioner: BUILD_FROM_WSL.md
+
+================================================================================
